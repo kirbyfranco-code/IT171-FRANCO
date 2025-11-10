@@ -1,15 +1,15 @@
-player_x = 0
-player_y = 0
+player_kirby = 0
+player_chip = 0
 
 treasure_x = 15
 treasure_y = 3
 
 game_running = True
 
-print(f"Find the treasure at ({treasure_x}, {treasure_y})!")
+print(f"Find the treasure at ({treasure_kirby}, {treasure_chip})!")
 
 while game_running:
-    print(f"Player position: ({player_x}, {player_y})")
+    print(f"Player position: ({player_kirby}, {player_chip})")
     move = input("Enter move (up/down/left/right or quit): ").lower()
 
     if move == "up":
@@ -26,8 +26,9 @@ while game_running:
     else:
         print("Invalid move! Please enter up, down, left, right, or quit.")
         continue
-    if player_x == treasure_x and player_y == treasure_y:
+    if player_kirby == treasure_x and player_chip == treasure_y:
         print(
             f" Congratulations! You found the treasure at ({treasure_x}, {treasure_y})!")
         game_running = False
+
 
