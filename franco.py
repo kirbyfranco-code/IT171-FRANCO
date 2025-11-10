@@ -1,7 +1,7 @@
 player_x = 0
 player_y = 0
 
-treasure_x = 5
+treasure_x = 15
 treasure_y = 3
 
 game_running = True
@@ -20,7 +20,7 @@ while game_running:
         player_x -= 1
     elif move == "right":
         player_x += 1
-    elif move == "quit":
+    elif move == "q":
         print("Game ended. Goodbye!")
         break
     else:
@@ -30,3 +30,4 @@ while game_running:
         print(
             f" Congratulations! You found the treasure at ({treasure_x}, {treasure_y})!")
         game_running = False
+
