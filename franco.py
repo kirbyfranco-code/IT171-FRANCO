@@ -19,7 +19,7 @@ while game_running:
         player_chip -= 1
     elif move == "a":
         player_kirby -= 1
-    elif move == "b":
+    elif move == "d":
         player_kirby += 1
     elif move == "q" or move == "quit":
         print("Game ended. Goodbye!")
@@ -32,6 +32,7 @@ while game_running:
     if player_kirby == treasure_x and player_chip == treasure_y:
         print(f" Congratulations! You found the treasure at ({treasure_x}, {treasure_y})!")
         game_running = False
+
 
 
 
