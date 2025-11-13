@@ -11,15 +11,15 @@ print(f"Find the treasure at ({treasure_x}, {treasure_y})!")
 
 while game_running:
     print(f"Player position: ({player_kirby}, {player_chip})")
-    move = input("Enter move (up/down/left/right or q to quit): ").lower()
-
-    if move == "up":
+    move = input("Enter move (w to go up/s to go down/a to go left/d to go right or q to quit): ").lower()
+ 
+    if move == "w":
         player_chip += 1
-    elif move == "down":
+    elif move == "s":
         player_chip -= 1
-    elif move == "left":
+    elif move == "a":
         player_kirby -= 1
-    elif move == "right":
+    elif move == "b":
         player_kirby += 1
     elif move == "q" or move == "quit":
         print("Game ended. Goodbye!")
